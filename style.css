@@ -1,0 +1,113 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 320px;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    border-bottom: 1px solid #2980b9;
+}
+
+#display {
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: right;
+    outline: none;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#display::placeholder {
+    color: #999;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    flex: 1;
+    border: none;
+    font-size: 20px;
+    margin: 10px 5px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.operator {
+    background-color: #f39c12;
+}
+
+.operator:hover {
+    background-color: #d35400;
+}
+
+.clear {
+    background-color: #e74c3c;
+}
+
+.clear:hover {
+    background-color: #c0392b; 
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        margin: 10px;
+        height: auto;
+    }
+
+    button {
+        flex: 1 1 45%;
+        font-size: 18px;
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    #display {
+        font-size: 20px;
+    }
+}
